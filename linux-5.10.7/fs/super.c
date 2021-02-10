@@ -1362,6 +1362,7 @@ static int test_bdev_super(struct super_block *s, void *data)
 	return (void *)s->s_bdev == data;
 }
 
+//mount_bdev : mount 함수
 struct dentry *mount_bdev(struct file_system_type *fs_type,
 	int flags, const char *dev_name, void *data,
 	int (*fill_super)(struct super_block *, void *, int))

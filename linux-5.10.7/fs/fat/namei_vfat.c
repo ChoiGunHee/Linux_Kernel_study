@@ -1050,6 +1050,7 @@ static int vfat_fill_super(struct super_block *sb, void *data, int silent)
 	return fat_fill_super(sb, data, silent, 1, setup);
 }
 
+//vfat_mount : mount start!
 static struct dentry *vfat_mount(struct file_system_type *fs_type,
 		       int flags, const char *dev_name,
 		       void *data)
