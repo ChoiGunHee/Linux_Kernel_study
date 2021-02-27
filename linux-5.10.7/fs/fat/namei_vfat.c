@@ -1045,6 +1045,7 @@ static void setup(struct super_block *sb)
 		sb->s_d_op = &vfat_dentry_ops;
 }
 
+//FAT mount 시작 함수
 static int vfat_fill_super(struct super_block *sb, void *data, int silent)
 {
 	return fat_fill_super(sb, data, silent, 1, setup);

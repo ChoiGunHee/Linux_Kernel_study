@@ -1599,6 +1599,7 @@ out:
 /*
  * Read the super block of an MS-DOS FS.
  */
+//실제 fAT Super Block을 생성하는 함수
 int fat_fill_super(struct super_block *sb, void *data, int silent, int isvfat,
 		   void (*setup)(struct super_block *))
 {
