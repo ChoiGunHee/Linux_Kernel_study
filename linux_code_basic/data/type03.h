@@ -9,9 +9,6 @@
  * 
  */
 
-#include <stdio.h>
-#include <stdlib.h>
-
 // /inlcude/linux/types.h
 /* bsd */
 typedef unsigned char		u_char;
